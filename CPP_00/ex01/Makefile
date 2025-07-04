@@ -6,7 +6,7 @@
 #    By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/02 17:05:14 by ruida-si          #+#    #+#              #
-#    Updated: 2025/07/02 17:05:35 by ruida-si         ###   ########.fr        #
+#    Updated: 2025/07/04 15:50:05 by ruida-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,11 +16,11 @@ CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = megaphone.cpp
+SRCS = main.cpp Contact.cpp utils.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
-all = $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
