@@ -6,11 +6,12 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 14:01:38 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/04 15:47:22 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/04 17:45:18 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+#include <iomanip>
 
 Contact::Contact()
 {
@@ -19,6 +20,15 @@ Contact::Contact()
 	nickName = "";
 	phoneNumber = "";
 	darkestSecret = "";
+}
+
+Contact::~Contact() {}
+
+void Contact::print_values()
+{
+	std::cout << std::setw(10) << firstName << "|"
+			  << std::setw(10) << lastName << "|"
+			  << std::setw(10) << nickName << std::endl;
 }
 
 void	Contact::setContactInfo()
