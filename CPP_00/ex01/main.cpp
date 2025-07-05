@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 14:25:50 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/05 16:41:38 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/05 18:48:39 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int main()
 	PhoneBook	phonebook;
 	std::string	cmd;
 
-	std::cout << "\n📞 Welcome to your PhoneBook!\n"
+	std::cout << "\n☎️ Welcome to your PhoneBook!\n\n"
 			  << "Available commands: ADD, SEARCH, EXIT\n";
 	while (1)
 	{
