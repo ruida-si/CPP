@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 15:45:32 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/04 17:50:43 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/04 18:08:20 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,9 @@ int check_is_alpha(const std::string& str)
 	return (1);
 }
 
-void ft_trunc(std::string& str)
+std::string ft_trunc(const std::string& str)
 {
-	if (str.length())
-	
+	if (str.length() > 10)
+		return str.substr(0, 9) + ".";
+	return str;
 }

@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:30:34 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/04 17:39:00 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/05 16:30:47 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 
 int check_is_alpha(const std::string& str);
 int check_is_nbr(const std::string& number);
+std::string ft_trunc(const std::string& str);
 
 class Contact {
 private:
@@ -35,6 +36,7 @@ public:
 	~Contact();
 	void setContactInfo();
 	void print_values();
+	void display_full();
 };
 
 #endif

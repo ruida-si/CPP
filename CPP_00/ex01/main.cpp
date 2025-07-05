@@ -6,15 +6,35 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 14:25:50 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/03 14:47:37 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/05 15:24:57 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+#include "PhoneBook.hpp"
 
 int main()
 {
-	Contact a;
-	a.setContactInfo();
+	PhoneBook	phonebook;
+	std::string	cmd;
+
+	std::cout << "📞 Welcome to your PhoneBook!\n"
+			  << "Available commands: ADD, SEARCH, EXIT\n";
+	while (1)
+	{
+		std::cout << "> ";
+		std::getline(std::cin, cmd);
+		if (cmd == "ADD")
+			phonebook.addContact();
+		else if (cmd == "SEARCH")
+			phonebook.displayContacts();
+		else if (cmd == "EXIT")
+		{
+			std::cout << "Goodbye!\n";
+			break ;
+		}
+		else
+			std::cout << "Invalid command. Please use ADD, SEARCH, or EXIT.\n";
+	}
 	return (0);
 }
