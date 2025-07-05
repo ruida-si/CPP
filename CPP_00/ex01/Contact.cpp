@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 14:01:38 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/05 15:59:39 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/05 16:50:03 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,11 @@ Contact::~Contact() {}
 
 void Contact::display_full()
 {
-	std::cout << "First Name: " << firstName << "\n"
-			  << "Last Name: " << lastName << "\n"
-			  << "NickName: " << nickName << "\n"
-			  << "Phone Number: " << phoneNumber << "\n"
-			  << "Darkest Secret: " << darkestSecret << "\n";	
+	std::cout << "First Name:     " << firstName << "\n"
+			  << "Last Name:      " << lastName << "\n"
+			  << "NickName:       " << nickName << "\n"
+			  << "Phone Number:   " << phoneNumber << "\n"
+			  << "Darkest Secret: " << darkestSecret << std::endl;	
 }
 
 void Contact::print_values()
