@@ -6,11 +6,22 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 15:45:32 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/04 18:08:20 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/08 16:38:17 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+
+int check_input()
+{
+	if (std::cin.eof() || std::cin.fail())
+	{
+		std::cin.clear();
+		std::cerr << "Input error or EOF detected. Exiting...\n";		
+		exit(1);
+	}
+	return 0;	
+}
 
 int check_is_nbr(const std::string& number)
 {

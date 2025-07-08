@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 14:35:08 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/05 16:37:30 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/08 16:46:34 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ class PhoneBook {
 private:
 	static const int MAX = 8;
 	Contact contacts[MAX];
-	int count;
-	int total;
+	int _count;
+	int _total;
 	
 public:
 	PhoneBook();
