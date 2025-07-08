@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 15:45:32 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/08 16:38:17 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/08 17:02:56 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int check_input()
 	{
 		std::cin.clear();
 		std::cerr << "Input error or EOF detected. Exiting...\n";		
-		exit(1);
+		std::exit(1);
 	}
-	return 0;	
+	return 0;
 }
 
 int check_is_nbr(const std::string& number)

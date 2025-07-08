@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:30:34 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/08 16:56:00 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/08 17:03:26 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <string>
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 
 int			check_is_alpha(const std::string& str);
 int			check_is_nbr(const std::string& number);
