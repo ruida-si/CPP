@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:30:34 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/05 16:30:47 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/07 13:49:06 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ private:
 	std::string darkestSecret;
 	
 	void fill_name(std::string& str, const std::string& msg);
-	void get_phone_nbr();	
+	void get_phone_nbr();
 
 public:
 	Contact();
