@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 18:35:53 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/08 18:45:29 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/09 13:19:05 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@ private:
 	
 public:
 	Zombie();
+	Zombie(std::string name);
 	~Zombie();
 
-	void	announce(void);
-	Zombie*	newZombie(std::string name);
-	void	randomChump( std::string name );
+	void announce(void);	
 };
+
+Zombie*	newZombie(std::string name);
+void	randomChump(std::string name);
 
 #endif

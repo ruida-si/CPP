@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/08 18:40:19 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/09 14:11:30 by ruida-si         ###   ########.fr       */
+/*   Created: 2025/07/09 13:35:37 by ruida-si          #+#    #+#             */
+/*   Updated: 2025/07/09 13:36:31 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string name) : _name(name) {}
-
-Zombie::~Zombie() {
-	std::cout << _name << " was destroyed\n";
-}
-
-void Zombie::announce(void)
+Zombie*	newZombie(std::string name)
 {
-	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;	
+	return new Zombie(name);
 }
