@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 17:13:24 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/10 18:18:44 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/10 18:23:51 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,34 @@
 #include "Weapon.hpp"
 
 int main()
+{
+	// Shared weapon for HumanA
+	Weapon club("crude spiked club");
+
+	HumanA bob("Bob", club);
+	bob.attack();  // Bob attacks with their crude spiked club
+
+	club.setType("some other type of club");
+	bob.attack();  // Bob attacks with their some other type of club
+
+	std::cout << std::endl;
+
+	// HumanB starts without weapon
+	Weapon axe("battle axe");
+
+	HumanB jim("Jim");
+	jim.attack();  // Jim has no weapon to attack with!
+
+	jim.setWeapon(axe);
+	jim.attack();  // Jim attacks with their battle axe
+
+	axe.setType("double-headed axe");
+	jim.attack();  // Jim attacks with their double-headed axe
+
+	return 0;
+}
+
+/* int main()
 {
 	{
 		Weapon club = Weapon("crude spiked club");
@@ -26,11 +54,11 @@ int main()
 	std::cout << std::endl;
 	{
 		Weapon club = Weapon("crude spiked club");
-		HumanB jim("Jim");		
+		HumanB jim("Jim");
 		jim.attack();
 		club.setType("some other type of club");
 		jim.setWeapon(club);
 		jim.attack();
 	}
 	return 0;
-}
+} */
