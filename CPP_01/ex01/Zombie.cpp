@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 18:40:19 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/09 18:19:03 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/10 14:41:27 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void Zombie::announce(void) const
 
 void Zombie::setName(std::string name)
 {
-	this->_name = name;	
+	this->_name = name;
 }
