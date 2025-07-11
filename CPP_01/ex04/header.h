@@ -1,31 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   header.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 18:28:13 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/11 14:54:36 by ruida-si         ###   ########.fr       */
+/*   Created: 2025/07/11 14:47:30 by ruida-si          #+#    #+#             */
+/*   Updated: 2025/07/11 14:58:29 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "header.h"
+#ifndef HEADER_H
+#define HEADER_H
 
-int main(int ac, char **av)
-{
-	if (ac == 4)
-	{
-		if (!av[2][0] || !av[3][0])
-		   std::cout << "Void input. Try again\n";
-		std::ifstream file(av[1]);
-		check_file(file);		
-		file.close();
-		std::cout << "Substitution completed successfully. Output saved to "
-				<< outputFilename << std::endl;
-	}
-	else
-		std::cout << "Usage: ./replace <filename> <s1> <s2>\n";
+#include <iostream>
+#include <fstream>
+#include <cstdlib>
 
-	return (0);
-}
+void check_file(std::ifstream& file, const std::string& file_name);
+
+#endif
