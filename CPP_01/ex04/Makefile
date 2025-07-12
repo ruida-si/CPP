@@ -6,20 +6,19 @@
 #    By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/02 17:05:14 by ruida-si          #+#    #+#              #
-#    Updated: 2025/07/10 17:35:03 by ruida-si         ###   ########.fr        #
+#    Updated: 2025/07/12 14:51:39 by ruida-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = human
+NAME = replace
 
 CXX = c++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = HumanA.cpp \
-	HumanB.cpp \
-	Weapon.cpp \
-	main.cpp
+SRCS = 00_utils_innit.cpp \
+    01_utils_replace.cpp \
+    main.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
