@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 13:57:55 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/12 16:37:35 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/21 13:55:59 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 std::string create_new_file(const std::string& old_file);
 
-bool replace_str(std::string& str, const std::string &s1, const std::string &s2)
+bool replace_str(std::string& str, const std::string& s1, const std::string& s2)
 {
-	std::string result;
-	size_t	pos = 0;
-	size_t found;
-	bool	replaced = false;
+	std::string	result;
+	size_t		pos = 0;
+	size_t		found;
+	bool		replaced = false;
 	
 	while ((found = str.find(s1, pos)) != std::string::npos)
 	{

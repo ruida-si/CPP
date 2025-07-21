@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 17:04:01 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/10 17:50:57 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/21 13:39:35 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 HumanA::HumanA(std::string name, Weapon& weaponA)
 	: _name(name), _weaponA(weaponA)
-{	
-}
+{}
 
 HumanA::~HumanA() {}
 

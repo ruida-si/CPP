@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 16:50:44 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/12 18:03:08 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/21 14:20:08 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,21 +41,21 @@ void Harl::complain(std::string level)
 {
 	int code = getCode(level);
 	
-	switch (code)	
-    {
-        case 0:  // DEBUG
-            debug();
-            // fallthrough
-        case 1:  // INFO
-            info();
-            // fallthrough
-        case 2:  // WARNING
-            warning();
-            // fallthrough
-        case 3:  // ERROR
-            error();
-            break;
-        default:
-            std::cout << "[ Probably complaining about insignificant problems ]\n";
-    }
+	switch (code)
+	{
+		case 0:  // DEBUG
+			debug();
+			// fallthrough
+		case 1:  // INFO
+			info();
+			// fallthrough
+		case 2:  // WARNING
+			warning();
+			// fallthrough
+		case 3:  // ERROR
+			error();
+		break;
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]\n";
+	}
 }
