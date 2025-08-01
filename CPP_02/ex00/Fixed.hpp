@@ -6,7 +6,7 @@
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 16:54:37 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/07/24 17:14:46 by ruida-si         ###   ########.fr       */
+/*   Updated: 2025/07/24 17:17:42 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	~Fixed();
 
 	int getRawBits(void) const;
-	void setRawBits(int const value);
+	void setRawBits(int const raw);
 	
 private:
 	int _fixedValue;
