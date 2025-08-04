@@ -1,33 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   Fixed2.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/24 16:54:37 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/08/01 14:05:46 by ruida-si         ###   ########.fr       */
+/*   Created: 2025/08/04 15:26:21 by ruida-si          #+#    #+#             */
+/*   Updated: 2025/08/04 16:05:51 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_HPP
-#define FIXED_HPP
+#include "Fixed.hpp"
 
-#include <iostream>
+int Fixed::toInt(void) const
+{
+	return (_fixedValue >> _fractionalBits);
+}
 
-class Fixed {
-public:
-	Fixed();
-	Fixed(const Fixed &other);
-	Fixed &operator=(const Fixed &other);
-	~Fixed();
-
-	int getRawBits(void) const;
-	void setRawBits(int const raw);
-	
-private:
-	int					_fixedValue;
-	static const int	_fractionalBits = 8;
-};
-
-#endif
+float Fixed::toFloat(void) const
+{
+	return (_fixedValue / static_cast<float>(1 << _fractionalBits));
+}

@@ -6,7 +6,7 @@
 #    By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/02 17:05:14 by ruida-si          #+#    #+#              #
-#    Updated: 2025/08/04 14:04:18 by ruida-si         ###   ########.fr        #
+#    Updated: 2025/08/04 15:29:39 by ruida-si         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS = Fixed.cpp \
+	Fixed2.cpp \
 	main.cpp
 
 OBJS = $(SRCS:.cpp=.o)

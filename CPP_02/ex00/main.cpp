@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ruida-si <ruida-si@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/24 16:54:37 by ruida-si          #+#    #+#             */
-/*   Updated: 2025/08/01 14:05:46 by ruida-si         ###   ########.fr       */
+/*   Created: 2025/08/04 13:57:42 by ruida-si          #+#    #+#             */
+/*   Updated: 2025/08/04 15:11:23 by ruida-si         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_HPP
-#define FIXED_HPP
+#include "Fixed.hpp"
 
-#include <iostream>
+int main() {
+	Fixed a;
+	Fixed b(a);
+	Fixed c;
+	c = b;
 
-class Fixed {
-public:
-	Fixed();
-	Fixed(const Fixed &other);
-	Fixed &operator=(const Fixed &other);
-	~Fixed();
+	std::cout << a.getRawBits() << std::endl;
+	std::cout << b.getRawBits() << std::endl;
+	std::cout << c.getRawBits() << std::endl;
 
-	int getRawBits(void) const;
-	void setRawBits(int const raw);
-	
-private:
-	int					_fixedValue;
-	static const int	_fractionalBits = 8;
-};
+	return 0;
+}
 
-#endif
+/*
+int main()
+{
+	Fixed a;
+	a.setRawBits(3.1434 * (1 << 8));
+	std::cout << "get raw bits" << a.getRawBits() << std::endl;
+}
+*/
